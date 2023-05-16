@@ -1,5 +1,5 @@
 import React from 'react'
-
+import close from "../assets/close.svg"
 function Menu(props) {
   return (
     <>
@@ -9,7 +9,7 @@ function Menu(props) {
         </div>
         <div className={`absolute ${!props.isMenuDisplayed ? "hidden" : "flex flex-col"} bg-white w-[70%] top-0 right-0 bottom-0 z-10 overflow-hidden`}> 
           <div className='flex justify-end'>
-            <img src="src/assets/close.svg" onClick={props.toggleMenu} className="w-[28px] h-[28px] mx-5 mt-9 object-contain cursor-pointer"></img>
+            <img src={close} onClick={props.toggleMenu} className="w-[28px] h-[28px] mx-5 mt-9 object-contain cursor-pointer"></img>
           </div>
           <ul className='flex flex-col list-none ml-2'>
             <a href="#" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer" onClick={props.toggleMenu}> Home </a>

@@ -1,4 +1,5 @@
 import React from 'react'
+import cartoon from '../assets/cartoon2.png'
 
 export default function Hero() {
   return (
@@ -28,7 +29,7 @@ export default function Hero() {
         </div>
         
         <div className='flex-1 flex justify-center items-center md:my-0  relative sm:px-20 px-0'>
-            <img src='./src/assets/cartoon2.png'
+            <img src={cartoon}
             className='lg:w-[100%]'></img>
         </div>
         

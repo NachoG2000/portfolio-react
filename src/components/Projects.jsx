@@ -1,5 +1,9 @@
 import React from 'react'
 import Card from "./ProjectsCard"
+import quizzical from "../assets/quizzical-screenshot.png"
+import intro from "../assets/intro-screenshot.png"
+import tenzies from "../assets/tenzies-screenshot.png"
+import tictactoe from "../assets/tictactoe-screenshot.png"
 
 export default function Projects() {
   return (
@@ -11,16 +15,16 @@ export default function Projects() {
             Here are a few past projects I've worked on
         </p>
         <div className='items-center mx-[5%] md:mx-[10%] grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3'>
-            <Card img="src/assets/quizzical-screenshot.png"
+            <Card img={quizzical}
                   url="https://quizzical-game-rouge.vercel.app/"
             />
             <Card img="src/assets/intro-screenshot.png"
-                  url="https://intro-section-dropdown-seven.vercel.app/"
+                  url={intro}
             />
-            <Card img="src/assets/tenzies-screenshot.png"
+            <Card img={tenzies}
                   url="https://tenzies-game-livid.vercel.app/"
             />
-            <Card img="src/assets/tictactoe-screenshot.png"
+            <Card img={tictactoe}
                   url="https://tic-tac-toe-umber-omega.vercel.app/"
             />
             {/* <Card />

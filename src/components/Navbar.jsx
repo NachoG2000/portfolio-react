@@ -1,5 +1,6 @@
 import React from 'react'
 import Menu from './Menu'
+import menu from "../assets/menu.svg"
 
 export default function Navbar(props) {
   return (
@@ -28,7 +29,7 @@ export default function Navbar(props) {
       </ul>
       <Menu isMenuDisplayed={props.isMenuDisplayed} toggleMenu={props.toggleMenu}/>
       <div className='sm:hidden flex flex-1 justify-end items-center h-[100px]'>
-        <img src="src/assets/menu.svg" onClick={props.toggleMenu} className="w-[28px] h-[28px] object-contain cursor-pointer"></img>
+        <img src={menu} onClick={props.toggleMenu} className="w-[28px] h-[28px] object-contain cursor-pointer"></img>
 
       </div>
       

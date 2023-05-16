@@ -1,5 +1,5 @@
 import React from 'react'
-
+import contact from '../assets/contact.png'
 export default function Contact() {
   return (
     <section id="contact-section" className='flex md:flex-row flex-col justify-center pb-6 sm:pb-16 sm:px-16 px-6 bg-gradient-to-r from-[#322D2B] to-[#4E4A49]'>
@@ -15,7 +15,7 @@ export default function Contact() {
                 </a>
             </div>
             <div className='flex justify-center items-center align-center text-center'>
-                <img src='src/assets/contact.png'
+                <img src={contact}
                 className=''>
             
             </img>

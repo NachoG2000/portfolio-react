@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from "./AboutCard"
+import check from "../assets/check.svg"
 
 export default function About() {
   return (
@@ -24,7 +25,7 @@ export default function About() {
             <div className="flex flex-col md:flex-row w-full md:justify-around justify-center bg-white rounded-lg">
                 <Card 
                 id={1}
-                icon="src/assets/check.svg"
+                icon={check}
                 title="Front-End Skills"
                 text="As a junior front end developer, I have developed my skills in React, JavaScript and CSS (Tailwind CSS) by working on personal projects. 
                 I am looking forward to applying what I have learned to real-world challenges. 
@@ -33,7 +34,7 @@ export default function About() {
                 <hr></hr>
                 <Card 
                 id={2}
-                icon="src/assets/check.svg"
+                icon={check}
                 title="Software Engineering Student"
                 text="I have a strong understanding of Software Engineering principles, such as Object-Oriented Programming (Java), Algorithms, and Data Structures.
                 I am interested in learning more about Software Engineering methodologies and tools in the future to improve my software development process."
@@ -41,7 +42,7 @@ export default function About() {
                 <hr></hr>
                 <Card 
                 id={3}
-                icon="src/assets/check.svg"
+                icon={check}
                 title="Other interests"
                 text="I also have other interests that motivate me to learn and create. One of them is AI advancements and news, 
                 which I follow to keep up with the latest trends and innovations in the field because I want to use AI tools to enhance my development abilities.
