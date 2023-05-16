@@ -18,8 +18,8 @@ export default function Projects() {
             <Card img={quizzical}
                   url="https://quizzical-game-rouge.vercel.app/"
             />
-            <Card img="src/assets/intro-screenshot.png"
-                  url={intro}
+            <Card img={intro}
+                  url={"https://intro-section-dropdown-seven.vercel.app/"}
             />
             <Card img={tenzies}
                   url="https://tenzies-game-livid.vercel.app/"
