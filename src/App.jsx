@@ -18,9 +18,9 @@ export default function App() {
       <div className={isMenuDisplayed ? "fixed" : ""}>
         <Navbar isMenuDisplayed={isMenuDisplayed} toggleMenu={toggleMenu}/>
         <Hero /> 
-        <About /> 
-        <Projects />
-        <Contact />
+        <About/> 
+        <Projects/>
+        <Contact/>
       </div>
   )
 }

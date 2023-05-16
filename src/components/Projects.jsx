@@ -3,7 +3,7 @@ import Card from "./ProjectsCard"
 
 export default function Projects() {
   return (
-    <section className='flex flex-col sm:pt-0 bg-[#E5E0DE] pb-6 xs:pb-16'>
+    <section id="projects-section" className='flex flex-col sm:pt-0 bg-[#E5E0DE] pb-6 xs:pb-16'>
         <h2 className='font-poppins font-semibold text-center ss:text-[52px] text-[32px] text-black ss:leading-[50px] leading-[40px] pt-6 xs:pt-16 sm:px-16 px-6 underline'>
             Recent work
         </h2>

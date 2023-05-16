@@ -12,11 +12,11 @@ function Menu(props) {
             <img src="src/assets/close.svg" onClick={props.toggleMenu} className="w-[28px] h-[28px] mx-5 mt-9 object-contain cursor-pointer"></img>
           </div>
           <ul className='flex flex-col list-none ml-2'>
-            <a href="#" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer"> Home </a>
-            <a href="#" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer"> About Me </a>
-            <a href="#" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer"> Projects </a>
-            <a href="#" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer"> Resume </a>
-            <a href="#" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer"> Contact </a>
+            <a href="#" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer" onClick={props.toggleMenu}> Home </a>
+            <a href="#about-section" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer" onClick={props.toggleMenu}> About Me </a>
+            <a href="#projects-section" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer" onClick={props.toggleMenu}> Projects </a>
+            <a href="https://drive.google.com/file/d/1kObCwN8n-FW3A8T5ADE1cJX1ibEhBleK/view?usp=sharing" target="_blank" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer"> Resume </a>
+            <a href="#contact-section" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer" onClick={props.toggleMenu}> Contact </a>
           </ul>
         </div>
     </>

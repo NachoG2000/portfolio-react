@@ -10,21 +10,21 @@ export default function Navbar(props) {
         {/* <img src="src/assets/logo2.png" alt='logo' className='h-[100px] w-[100px] '/> */}
       </div>
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
-        <li href="#" className="text-[#6B6B6B] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
+        <a href="#" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
         Home
-        </li>
-        <li href="#" className="text-[#6B6B6B] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
+        </a>
+        <a href="#about-section" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
         About Me
-        </li>
-        <li href="#" className="text-[#6B6B6B] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
+        </a>
+        <a href="#projects-section" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
         Projects
-        </li>
-        <li href="#" className="text-[#6B6B6B] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
+        </a>
+        <a href="https://drive.google.com/file/d/1kObCwN8n-FW3A8T5ADE1cJX1ibEhBleK/view?usp=sharing" target="_blank" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
         Resume
-        </li>
-        <li href="#" className="text-[#6B6B6B] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
+        </a>
+        <a href="#contact-section" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
         Contact
-        </li>
+        </a>
       </ul>
       <Menu isMenuDisplayed={props.isMenuDisplayed} toggleMenu={props.toggleMenu}/>
       <div className='sm:hidden flex flex-1 justify-end items-center h-[100px]'>

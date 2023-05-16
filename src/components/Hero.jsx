@@ -18,12 +18,12 @@ export default function Hero() {
                 Explore my projects and get in touch to learn more.
             </p>
             <div className='flex justify-center pt-5 '>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl sm:text-lg lg:text-xl">
+                <a href="#projects-section" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl sm:text-lg lg:text-xl">
                     Projects
-                </button>
-                <button className="bg-[#4E4A49] hover:bg-[#322D2B] text-white font-bold py-2 px-4 rounded-xl sm:text-lg lg:text-xl mx-2">
+                </a>
+                <a href="#contact-section" className="bg-[#4E4A49] hover:bg-[#322D2B] text-white font-bold py-2 px-4 rounded-xl sm:text-lg lg:text-xl mx-2">
                     Contact me
-                </button>
+                </a>
             </div>
         </div>
         
