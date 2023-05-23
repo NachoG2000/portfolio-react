@@ -4,6 +4,8 @@ import quizzical from "../assets/quizzical-screenshot.png"
 import intro from "../assets/intro-screenshot.png"
 import tenzies from "../assets/tenzies-screenshot.png"
 import tictactoe from "../assets/tictactoe-screenshot.png"
+import ipTracker from "../assets/ip-tracker-screenshot.png"
+import todoList from "../assets/todo-list-screenshot.png"
 
 export default function Projects() {
   return (
@@ -15,8 +17,14 @@ export default function Projects() {
             Here are a few past projects I've worked on
         </p>
         <div className='items-center mx-[5%] md:mx-[10%] grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3'>
+            <Card img={ipTracker}
+                  url="https://address-tracker-react.vercel.app/"
+            />
             <Card img={quizzical}
                   url="https://quizzical-game-rouge.vercel.app/"
+            />
+            <Card img={todoList}
+                  url="https://todo-react-ng.vercel.app/"
             />
             <Card img={intro}
                   url={"https://intro-section-dropdown-seven.vercel.app/"}
@@ -27,8 +35,6 @@ export default function Projects() {
             <Card img={tictactoe}
                   url="https://tic-tac-toe-umber-omega.vercel.app/"
             />
-            {/* <Card />
-            <Card /> */}
         </div>
     </section>
   )
