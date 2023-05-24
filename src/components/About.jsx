@@ -37,7 +37,8 @@ export default function About() {
                 icon={check}
                 title="Software Engineering Student"
                 text="I have a strong understanding of Software Engineering principles, such as Object-Oriented Programming (Java), Algorithms, and Data Structures.
-                I am interested in learning more about Software Engineering methodologies and tools in the future to improve my software development process."
+                I have also gained valuable experience working in collaborative environments through various university projects. 
+                I am eager to continue expanding my knowledge and skills in Software Engineering methodologies and tools to further enhance my software development process."
                 />
                 <hr></hr>
                 <Card 
