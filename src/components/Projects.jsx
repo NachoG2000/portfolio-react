@@ -6,6 +6,9 @@ import tenzies from "../assets/tenzies-screenshot.png"
 import tictactoe from "../assets/tictactoe-screenshot.png"
 import ipTracker from "../assets/ip-tracker-screenshot.png"
 import todoList from "../assets/todo-list-screenshot.png"
+import countries from "../assets/countries.png"
+import sneakers from "../assets/sneakers.png"
+import rockpaperscissors from "../assets/rockpaperscissors.png"
 
 export default function Projects() {
   return (
@@ -17,6 +20,15 @@ export default function Projects() {
             Here are a few past projects I've worked on
         </p>
         <div className='items-center mx-[5%] md:mx-[10%] grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3'>
+            <Card img={sneakers}
+                  url="https://sneakers-product-react.vercel.app/"
+            />
+            <Card img={countries}
+                  url="https://where-in-the-world-reactng.vercel.app/"
+            />
+            <Card img={rockpaperscissors}
+                  url="https://rock-paper-scissors-react-delta-peach.vercel.app/"
+            />
             <Card img={ipTracker}
                   url="https://address-tracker-react.vercel.app/"
             />
