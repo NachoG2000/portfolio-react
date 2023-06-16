@@ -3,7 +3,7 @@ import contact from '../assets/contact.png'
 export default function Contact() {
   return (
     <section id="contact-section" className='flex md:flex-row flex-col justify-center pb-6 sm:pb-16 sm:px-16 px-6 bg-gradient-to-r from-[#322D2B] to-[#4E4A49]'>
-        <div className='className="flex flex-col md:flex-row md:justify-around justify-center bg-white rounded-lg mt-16'>
+        <div className='md:flex-row md:justify-around justify-center bg-white rounded-lg mt-16'>
             <div className='flex items-center justify-start flex-col md:mt-16 mt-6'>
                 <p className='pt-10 lg:w-[60%] mx-[5%] md:mx-[10%] font-poppins font-normal text-center ss:text-[20px] text-[16px] text-black ss:leading-[24px] leading-[20px]'>
                     I'm always looking for new challenges and ways to grow as a developer. 
