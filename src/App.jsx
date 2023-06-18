@@ -3,8 +3,8 @@ import {RouterProvider, createBrowserRouter, createRoutesFromElements, Route} fr
 
 import Layout from './components/Layout'
 import HomePage from './pages/HomePage'
-import ContactPage from './pages/ContactPage'
 import ProjectsPage from './pages/ProjectsPage'
+import NotFoundPage from './pages/NotFoundPage'
 
 import quizzical from "./assets/quizzical-screenshot.png"
 import intro from "./assets/intro-screenshot.png"
@@ -20,22 +20,22 @@ export default function App() {
 
   const projectsArray = [
     {
+    title: "Where in the World",
+    url: "https://where-in-the-world-reactng.vercel.app/",
+    img: countries,
+    description: "Uncover this project from Frontend Mentor where I utilized React, React-Router, and Tailwind CSS. Explore country data, search for specific countries, filter by region, and seamlessly switch between light and dark modes. "
+    },
+    {
     title: "Sneakers Product",
     url: "https://sneakers-product-react.vercel.app/",
     img: sneakers,
     description: "Discover my implementation of this challenge from Frontend Mentor, demostrating my skills in React, JavaScript, and Tailwind CSS. Experience a responsive layout, interactive lightbox product gallery, and seamless cart functionality."
     },
     {
-    title: "Where in the World",
-    url: "https://where-in-the-world-reactng.vercel.app/",
-    img: countries,
-    description: "Discover this project from Frontend Mentor where I utilized React, React-Router, and Tailwind CSS. Explore country data, search for specific countries, filter by region, and seamlessly switch between light and dark modes. "
-    },
-    {
-    title: "Rock Paper Scissors",
-    url: "https://rock-paper-scissors-react-delta-peach.vercel.app/",
-    img: rockpaperscissors,
-    description: "Experience the Rock, Paper, Scissors game challenge. Using React, JavaScript and Tailwind CSS, I crafted a layout for both desktop and mobile devices, allowing users to play against the computer. (Frontend Mentor challenge)"
+    title: "Todo List",
+    url: "https://todo-react-ng.vercel.app/",
+    img: todoList,
+    description: "Experience this Todo App project developed using React, JavaScript, and Tailwind CSS. Enjoy adding, completing, and deleting todos, as well as filtering and toggling between light and dark modes for an enhanced user experience. (Frontend Mentor challenge)"
     },
     {
     title: "IP Tracker",
@@ -44,22 +44,22 @@ export default function App() {
     description: "Through the use of React, JavaScript, and Tailwind CSS, I built a responsive app that integrates the IP Geolocation API by IPify and LeafletJS. Experience the power of visualizing IP address locations on a dynamic map with this project. (Frontend Mentor challenge)"
     },
     {
+    title: "Rock Paper Scissors",
+    url: "https://rock-paper-scissors-react-delta-peach.vercel.app/",
+    img: rockpaperscissors,
+    description: "Experience the Rock, Paper, Scissors game challenge. Using React, JavaScript and Tailwind CSS, I crafted a layout for both desktop and mobile devices, allowing users to play against the computer. (Frontend Mentor challenge)"
+    },
+    {
     title: "Quizzical Trivia Game",
     url: "https://quizzical-game-rouge.vercel.app/",
     img: quizzical,
     description: "Leveraging an API to retrieve questions and answers, I created a responsive design optimized for both mobile and desktop devices using React, JavaScript, and Tailwind CSS. Immerse yourself in this engaging experience and put your knowledge to the test."
     },
     {
-    title: "Todo List",
-    url: "https://todo-react-ng.vercel.app/",
-    img: todoList,
-    description: "Discover Todo App project developed using React, JavaScript, and Tailwind CSS. Enjoy adding, completing, and deleting todos, as well as filtering and toggling between light and dark modes for an enhanced user experience. (Frontend Mentor challenge)"
-    },
-    {
     title: "Intro Section Dropdown",
     url: "https://intro-section-dropdown-seven.vercel.app/",
     img: intro,
-    description: "Built using React, JavaScript, and Tailwind CSS, the design ensures that users can seamlessly access relevant dropdown menus on both desktop and mobile devices. (Frontend Mentor 'Junior' challenge)"
+    description: "Built using React, JavaScript, and Tailwind CSS, the design ensures that users can seamlessly access relevant dropdown menus on both desktop and mobile devices. (Frontend Mentor challenge)"
     },
     {
     title: "Tenzies Game",
@@ -80,8 +80,8 @@ export default function App() {
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<HomePage projectsArray={projectsArray}/>}/>
-      <Route path="contact" element={<ContactPage />}/>
       <Route path="projects" element={<ProjectsPage projectsArray={projectsArray}/>}/>
+      <Route path='*' element={<NotFoundPage />}/>
     </Route>
   )) 
 

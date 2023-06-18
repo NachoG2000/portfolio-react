@@ -24,7 +24,7 @@ export default function Projects(props) {
             {projectsElements}
         </div>
         <div className='flex justify-center rounded-lg'>
-            <Link to="projects" className="bg-[#4E4A49] hover:bg-[#322D2B] text-white font-bold py-3 px-6 rounded-2xl sm:text-xl lg:text-2xl mx-2 mt-6">
+            <Link to="projects" className="bg-[#4E4A49] hover:bg-[#322D2B] text-white font-bold py-3 px-6 rounded-lg sm:text-xl lg:text-2xl mx-2 mt-6">
                   More projects
             </Link>
         </div>

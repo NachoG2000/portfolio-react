@@ -1,8 +1,16 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
+
 import Menu from './Menu'
 import menu from "../assets/menu.svg"
 
 export default function Navbar(props) {
+  const activeStyles = {
+    fontWeight: "bold",
+    textDecoration: "underline",
+    color: "#161616"
+}
+
   return (
     // ${toggle ?"" : "h-[300px]"}
     <nav className= {`w-full pl-0 pr-5 sm:px-5 flex justify-between items-center bg-[#E5E0DE]`} > 
@@ -11,21 +19,15 @@ export default function Navbar(props) {
         {/* <img src="src/assets/logo2.png" alt='logo' className='h-[100px] w-[100px] '/> */}
       </div>
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
-        <a href="#" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
+        <NavLink to="/" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline" style={({isActive}) => isActive ? activeStyles : null}>
         Home
-        </a>
-        <a href="#about-section" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
-        About Me
-        </a>
-        <a href="#projects-section" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
+        </NavLink>
+        <NavLink to="/projects" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline" style={({isActive}) => isActive ? activeStyles : null}>
         Projects
-        </a>
-        <a href="https://drive.google.com/file/d/1kObCwN8n-FW3A8T5ADE1cJX1ibEhBleK/view?usp=sharing" target="_blank" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
+        </NavLink>
+        <Link to="https://drive.google.com/file/d/1kObCwN8n-FW3A8T5ADE1cJX1ibEhBleK/view?usp=sharing" target="_blank" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
         Resume
-        </a>
-        <a href="#contact-section" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
-        Contact
-        </a>
+        </Link>
       </ul>
       <Menu isMenuDisplayed={props.isMenuDisplayed} toggleMenu={props.toggleMenu}/>
       <div className='sm:hidden flex flex-1 justify-end items-center h-[100px]'>
@@ -36,26 +38,3 @@ export default function Navbar(props) {
     </nav>
   )
 }
-
-
-{/* <div className={`${!toggle ? "hidden" : "flex"} p-6 absolute w-full top-20 right-0  my-2 min-w-[140px] bg-[#E5E0DE] shadow-lg `} >
-
-<ul className='list-none flex flex-col justify-end items-end flex-1'>
-
-  <li href="#" className="text-black-300 mr-4 font-poppins font-normal cursor-pointer text-[16px] my-1">
-  Home Page
-  </li>
-  <li href="#" className="text-black-300 mr-4 font-poppins font-normal cursor-pointer text-[16px] my-1">
-  About Me
-  </li>
-  <li href="#" className="text-black-300 mr-4 font-poppins font-normal cursor-pointer text-[16px] my-1">
-  Skills
-  </li>
-  <li href="#" className="text-black-300 mr-4 font-poppins font-normal cursor-pointer text-[16px] my-1">
-  Projects
-  </li>
-  <li href="#" className="text-black-300 mr-4 font-poppins font-normal cursor-pointer text-[16px] my-1">
-  Contact
-  </li>
-</ul>
-</div> */}

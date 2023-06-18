@@ -1,5 +1,7 @@
 import React from 'react'
 import contact from '../assets/contact.png'
+import linkedin from '../assets/linkedin.png'
+
 export default function Contact() {
   return (
     <section id="contact-section" className='flex md:flex-row flex-col justify-center pb-6 sm:pb-16 sm:px-16 px-6 bg-gradient-to-r from-[#322D2B] to-[#4E4A49]'>
@@ -10,13 +12,13 @@ export default function Contact() {
                     If you have a project in mind or just want to connect, 
                     don't hesitate to reach out.
                 </p>
-                <a href="mailto:ignaciongarcia00@example.com" className="bg-[#4E4A49] hover:bg-[#322D2B] text-white font-bold py-3 px-6 rounded-2xl sm:text-xl lg:text-2xl mx-2 mt-6">
+                <a href="https://www.linkedin.com/in/ignacio-garcia-a3930a1a2/" target="_blank" className="flex gap-3 items-center bg-[#4E4A49] hover:bg-[#322D2B] text-white font-bold py-3 px-6 rounded-lg sm:text-xl lg:text-2xl mx-2 mt-6">
                     Contact me
+                    <img src={linkedin} alt="linkedin icon" className='h-4 mt-1'/>
                 </a>
             </div>
             <div className='flex justify-center items-center align-center text-center'>
-                <img src={contact}
-                className=''>
+                <img src={contact} alt="mail icon">
             
             </img>
             </div>
