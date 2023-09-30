@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import close from "../assets/close.svg"
 function Menu(props) {
@@ -22,7 +22,7 @@ function Menu(props) {
           <ul className='flex flex-col list-none ml-2'>
             <NavLink to="/" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer" style={({isActive}) => isActive ? activeStyles : null} onClick={props.toggleMenu}> Home </NavLink>
             <NavLink to="/projects" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer" style={({isActive}) => isActive ? activeStyles : null} onClick={props.toggleMenu}> Projects </NavLink>
-            <NavLink href="https://drive.google.com/file/d/1kObCwN8n-FW3A8T5ADE1cJX1ibEhBleK/view?usp=sharing" target="_blank" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer"> Resume </NavLink>
+            <Link to="https://drive.google.com/file/d/1iWX8G99zlmSxWnzyks-4USGk0IaOYBCT/view" target="_blank" className="m-2 font-semibold text-[#6B6B6B] hover:text-[#212121] cursor-pointer"> Resume </Link>
           </ul>
         </div>
     </>

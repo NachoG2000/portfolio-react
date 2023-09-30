@@ -25,7 +25,7 @@ export default function Navbar(props) {
         <NavLink to="/projects" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline" style={({isActive}) => isActive ? activeStyles : null}>
         Projects
         </NavLink>
-        <Link to="https://drive.google.com/file/d/1kObCwN8n-FW3A8T5ADE1cJX1ibEhBleK/view?usp=sharing" target="_blank" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
+        <Link to="https://drive.google.com/file/d/1iWX8G99zlmSxWnzyks-4USGk0IaOYBCT/view" target="_blank" className="text-[#4E4A49] hover:text-[#212121] mr-4 font-poppins font-normal cursor-pointer text-[16px] hover:underline">
         Resume
         </Link>
       </ul>

@@ -75,8 +75,6 @@ export default function App() {
     }
     ];
 
-
-
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<HomePage projectsArray={projectsArray}/>}/>
